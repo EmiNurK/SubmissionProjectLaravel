@@ -7,6 +7,13 @@
 <body>
     <h1>Data Jurusan</h1>
 
+    @if (session('success'))
+    <p>{{ session('success') }}</p>
+@endif
+
+    <a href="{{ route('jurusan.create') }}">Tambah Jurusan</a>
+    <br><br>
+
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
             <tr>
